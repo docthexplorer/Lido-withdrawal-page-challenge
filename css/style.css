@@ -1,0 +1,394 @@
+:root {
+    --background: #D1D1D150;
+    --flexbgcolor: #F1F6F9;
+}
+
+body {
+    background-color: var(--background);
+    color: #212A3E;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+nav {
+    margin: 10px 0 0;
+    padding: 0;
+
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+    margin: 0 2rem;
+    height: 30px;
+
+}
+
+.nav-left, .main-nav, .nav-right {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: space-between;
+    flex-basis: 550px;
+    
+}
+
+.main-nav {
+    flex-basis: 400px;
+}
+
+.logo, .stake, .wrap, .withdrawals, .rewards {
+    color: #535962;
+    height: 100%;
+    margin-right: 5px;
+
+}
+
+.nav-logo, .nav-icon {
+    margin-right: 5px;
+    width: 20px;
+    vertical-align: middle;
+
+}
+
+.nav-brand, .nav {
+    display: inline;
+    font-size: x-small;
+    font-weight: bolder;
+    line-height: 30px;
+    padding: 0;
+    margin: 0;
+    vertical-align: middle;
+}
+
+.nav-brand {
+    font-family: 'Geologica', sans-serif;
+    font-size: medium;
+    font-weight: bolder;
+    letter-spacing: 0.5rem;
+}
+
+.nav-right {
+    flex-basis: 180px;
+}
+
+.theme {
+    border-radius: 5px;
+    width: 30px;
+    height: 100%;
+    background-color: #ffffff;
+    margin: 0;
+    position: relative;
+
+}
+
+.moon-icon {
+    width: 10px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+
+}
+
+.connect-wallet {
+    background: #3498db;
+    background-image: -webkit-linear-gradient(top, #3498db, #2980b9);
+    background-image: -moz-linear-gradient(top, #3498db, #2980b9);
+    background-image: -ms-linear-gradient(top, #3498db, #2980b9);
+    background-image: -o-linear-gradient(top, #3498db, #2980b9);
+    background-image: linear-gradient(to bottom, #3498db, #2980b9);
+    -webkit-border-radius: 5;
+    -moz-border-radius: 5;
+    border-radius: 5px;
+    border-style: none;
+    color: #ffffff;
+    font-size: small;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+  }
+  
+.connect-wallet:hover {
+    background: #3cb0fd;
+    background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
+    background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
+    background-image: -ms-linear-gradient(top, #3cb0fd, #3498db);
+    background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
+    background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
+    border-style: none;
+    text-decoration: none;
+}
+
+.title {
+    margin-top: 40px;
+}
+
+h1 {
+    font-size: 30px;
+    font-weight:bolder;
+}
+
+.title  * {
+    line-height: 0.5rem;
+}
+
+.button {
+    background-color: #C9CCD5;
+    border-radius: 20px;
+    box-sizing: content-box;
+    box-shadow: inset 1px 1px 3px #C9CCD5;
+    width: 250px;
+    height: 40px;
+    margin: 20px auto;
+    position: relative;
+
+}
+
+.btn1, .btn2 {
+    -webkit-border-radius: 20;
+    -moz-border-radius: 20;
+    border-radius: 20px;
+    height: 36px;
+    font-size: 15px;
+    font-weight: bold;
+    background:  #ffffff;
+    border-style: none;
+    padding: 5px 30px;
+    text-decoration: none;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    
+  }
+  
+  .btn2 {
+    background: #C9CCD5;
+    position: absolute;
+    top: 2px;
+    right: 2px;
+    left: auto;
+  }
+
+.container-two {
+    display: flex;
+    flex-direction: column;
+    width: 450px;
+    background-color: white;
+    border-radius: 20px;
+    margin: 0 auto 20px;
+    padding: 30px;
+    gap: 20px;
+    font-size: 10px;
+}
+
+.container-two * {
+    border-radius: 10px;
+}
+
+.pick {
+    border: 2px solid var(--background);
+    display: flex;
+    font-size: 12px;
+    gap: 0px;
+}
+
+.pick-icon {
+    border-radius: 0;
+    border-right: 2px solid var(--background);
+    position: relative;
+    width: 50px;
+    
+}
+
+.p-img {
+    width: 15px;
+    position: absolute;
+    top: 15px;
+    left:15px;
+    
+}
+
+.arrow::after {
+    content: "";
+    border-top: 3px solid gray;
+    border-left: 3px solid transparent;
+    border-right: 3px solid transparent;
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    right: 5px;
+}
+
+.amount {
+    color: gray;
+    margin-left: 15px;
+    padding-right: 230px;
+}
+
+.max {
+    margin-right: 30px;
+    position: relative;
+}
+
+.btn-max {
+    -webkit-border-radius: 20;
+    -moz-border-radius: 20;
+    color: lightblue;
+    border-radius: 5px;
+    height: 30px;
+    background: var(--flexbgcolor);
+    border-style: none;
+    font-size: 10px;
+    padding: 10px 15px;
+    text-decoration: none;
+    position: absolute;
+    top: 5px;
+    left: 2px;
+}
+
+.quote {
+    display: flex;
+    justify-content: space-between;
+}
+
+.use {
+    background-color: var(--flexbgcolor);
+    border: 2px solid var(--background);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 210px;
+    height: 100px;
+}
+
+.u-border {
+    border: 3px solid #C9CCD5;
+}
+
+.use-header, .u-details {
+    display:flex;
+    justify-content: space-between;
+    margin: auto 20px;
+}
+
+.u-details {
+    margin: -5px 0;
+}
+
+.use-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: auto 20px;
+}
+
+.use-title {
+    font-weight: bolder;
+    font-size: 12px;
+}
+
+
+.u-logo {
+    position: relative;
+}
+
+.u-logo img {
+    border: 3px solid white;
+    border-radius: 50%;
+    position:absolute;
+    width:12px;
+    top: 7px;
+    right: 0px;
+}
+
+.use-icon {
+    position: relative;
+}
+
+.use-icon img {
+    background-color: #C9CCD5;
+    border: 1px solid white;
+    position: absolute;
+    width: 18px;
+    top: 7px;
+    right: 30px;
+  
+}
+
+.use-icon .img2 {
+    right: 15px;
+    z-index: 1;
+}
+
+.use-icon .img3 {
+    right: 0px;
+    z-index: 2;
+}
+
+.content-sub {
+    font-size: 11px;
+}
+
+.content-fig {
+    font-weight: bold;
+}
+
+.swap-ex {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.ex {
+    background-color: var(--flexbgcolor);
+    display: flex;
+    font-size: 12px;
+    justify-content: space-between;
+
+}
+
+.ex-major {
+    margin: 20px;
+    width: 200px;
+}
+
+.ex-logo {
+    float: left;
+}
+
+.ex-logo img {
+    background-color: #C9CCD5;
+    border-radius: 50%;
+    width: 40px;
+    margin-right: 20px;
+}
+
+.ex-link {
+    text-align: left;
+}
+
+.ex-link p {
+    font-weight: bold;
+    margin: 0;  
+}
+
+.l-title {
+    font-size: 15px;
+}
+
+.ex-link a {
+    color: #068FFF;
+    text-decoration: none;
+}
+
+.ex-minor {
+    margin: 10px;
+}
+
+.dash {
+    font-size: 15px;
+
+}
+
